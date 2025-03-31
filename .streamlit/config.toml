@@ -1,0 +1,15 @@
+[theme]
+
+# Primary accent for interactive elements
+primaryColor = '#F3D0D7'
+
+# Background color for the main content area
+backgroundColor = '#F6F5F2'
+
+# Color used for almost all text
+textColor = '#4D4545'
+
+# Font family for all text in the app, except code blocks
+# Accepted values (serif | sans serif | monospace) 
+# Default: "sans serif"
+font = "monospace" 
