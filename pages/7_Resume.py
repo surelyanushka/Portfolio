@@ -40,10 +40,8 @@ st.download_button(
 
 st.markdown("---")
 
-# ---------- Contact & Socials ----------
 st.subheader("📬 Connect with Me")
 
-# Use columns for a neat layout
 col1, col2, col3, col4, col5, col6 = st.columns(6)
 
 with col1:

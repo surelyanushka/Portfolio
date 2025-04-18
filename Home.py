@@ -14,6 +14,12 @@ st.set_page_config(
     layout="wide",
 )
 
+# This is so the app doesn't sleep, tysm for that STREAMLIT :)))
+if st.query_params.get("ping") == "true":
+    st.write("uptime: active")
+    st.stop()
+
+
 st.markdown('<div style="display: none">uptime: active</div>', unsafe_allow_html=True)
 
 linkedin_url = "https://www.linkedin.com/in/anushka-tawte/"
