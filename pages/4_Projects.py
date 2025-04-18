@@ -38,23 +38,11 @@ with st.container():
         st.image('images/FashionAId.png')
     with text_column:
         st.markdown("""
-        - Engineered Fashion AId, utilizing Gemini 1.5 Pro and Stable Diffusion for advanced text-to-image generation, enhancing accessibility for visually impaired users by providing visual outfit suggestions.
-        - Employed MongoDB to manage and store user wardrobe data for personalized recommendations.
+        - Engineered a solution using Gemini 1.5 Pro and Stable Diffusion for advanced text-to-image generation, enhancing accessibility for visually impaired users.
+        - Won a hackathon with over 100 participants from NY for a personalized outfit recommender project.
 
         `Python` `Gemini 1.5 Pro` `Stable Diffusion` `MongoDB`
         """)
-
-with st.container():
-    st.subheader("Linux Disk I/O Optimization and Performance Enhancement")
-    st.write("*November 2023 - December 2023*")
-
-    st.markdown("""
-    - Spearheaded a project focused on optimizing disk input/output performance in Linux, successfully enhancing file operation efficiency through strategic block size selection and multi-threading techniques.
-    - Analyzed system call performance, identifying optimal block sizes to reduce overhead and increase I/O throughput.
-    - Developed an algorithm processing 2.12 GB files in just 1 second in a Dockerized setup, demonstrating efficient multi-threading and block size optimization in a containerized environment.
-
-    `Python` `Linux` `Docker` `Multi-threading`
-    """)
 
 with st.container():
     st.subheader("Spinescan AI")
@@ -72,30 +60,43 @@ with st.container():
         """)
 
 with st.container():
-    st.subheader("Credit Card Fraud Risk Assessment")
-    st.write("*March 2022*")
-
+    st.subheader("Malware Detection using CNNs")
+    st.write("*July 2021 - February 2022*")
+    # image_column, text_column = st.columns((1, 5))
     st.markdown("""
-    - Spearheaded a Credit Card Fraud Detection system, leveraging anomaly detection techniques to analyze transaction data and uncover fraud patterns, achieving a 93% accuracy with advanced machine learning algorithms.
-    - Employed Jupyter Notebooks for model development and Matplotlib, Seaborn for insightful visualizations, significantly enhancing fraud identification processes and supporting a data-driven decision-making culture.
+    - Developed a novel CNN (Convolutional Neural Network) to counter code obfuscation, leveraging binary representational images for malware identification, achieving a 92.7% accuracy rate.
+    - Authored a published paper in IEEE Xplore, highlighting capabilities in security and research publication [link](https://ieeexplore.ieee.org/document/10142644).
 
-    `Python` `Jupyter Notebooks` `Matplotlib` `Seaborn`
+    `Python` `TensorFlow` `Convolutional Neural Networks`
     """)
 
 with st.container():
-    st.subheader("Malware Detection using Images")
-    st.write("*July 2021 - February 2022*")
+    st.subheader("Linux Disk I/O Optimization and Performance Enhancement")
+    st.write("*November 2023 - December 2023*")
+
+    st.markdown("""
+    - Spearheaded a project focused on optimizing disk input/output performance in Linux, successfully enhancing file operation efficiency through strategic block size selection and multi-threading techniques.
+    - Analyzed system call performance, identifying optimal block sizes to reduce overhead and increase I/O throughput.
+    - Developed an algorithm processing 2.12 GB files in just 1 second in a Dockerized setup, demonstrating efficient multi-threading and block size optimization in a containerized environment.
+
+    `Python` `Linux` `Docker` `Multi-threading`
+    """)
+       
+with st.container():
+    st.subheader("Credit Card Fraud Risk Assessment")
+    st.write("*March 2022*")
     image_column, text_column = st.columns((1, 5))
     with image_column:
-        # Insert image here
+    # Insert image here
         st.image('images/cc.png')
     with text_column:
         st.markdown("""
-        - Developed a novel CNN (Convolutional Neural Network) to counter code obfuscation, leveraging binary representational images for malware identification, achieving a 92.7% accuracy rate.
-        - Authored a published paper in IEEE Xplore, highlighting capabilities in security and research publication [link](https://ieeexplore.ieee.org/document/10142644).
+        - Spearheaded a Credit Card Fraud Detection system, leveraging anomaly detection techniques to analyze transaction data and uncover fraud patterns, achieving a 93% accuracy with advanced machine learning algorithms.
+        - Employed Jupyter Notebooks for model development and Matplotlib, Seaborn for insightful visualizations, significantly enhancing fraud identification processes and supporting a data-driven decision-making culture.
 
-        `Python` `TensorFlow` `Convolutional Neural Networks`
+        `Python` `Jupyter Notebooks` `Matplotlib` `Seaborn`
         """)
+
 
 with st.container():
     st.subheader("Facial Recognition Attendance System")

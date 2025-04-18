@@ -14,6 +14,8 @@ st.set_page_config(
     layout="wide",
 )
 
+st.markdown('<div style="display: none">uptime: active</div>', unsafe_allow_html=True)
+
 linkedin_url = "https://www.linkedin.com/in/anushka-tawte/"
 email_url = "mailto:at5849@nyu.edu"
 github_url = "https://github.com/surelyanushka"

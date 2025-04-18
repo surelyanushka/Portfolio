@@ -17,8 +17,7 @@ st.set_page_config(
     layout="wide", 
 )
 local_css("style/style.css")
-st.header("RESUME")
-
+st.header("📄RESUME")
 
 
 def local_css(file_name):
@@ -27,11 +26,31 @@ def local_css(file_name):
         
 local_css("style/style.css")
 
-# This links to a random website?
-st.write("[Click here if it's blocked by your browser](https://drive.google.com/file/d/1KbXrU8x9KcdcNxYrp4iR4iB9xhHQy2qS/view?usp=sharing)")
 
-with open("images/Resume.pdf","rb") as f:
-      base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-      pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1000mm" height="1000mm" type="application/pdf"></iframe>'
-      st.markdown(pdf_display, unsafe_allow_html=True)
-  
+with open("images/Resume.pdf", "rb") as f:
+    pdf_data = f.read()
+
+st.download_button(
+    label="Download Resume",
+    data=pdf_data,
+    file_name="Anushka_Tawte_Resume.pdf",
+    mime="application/pdf",
+    key="resume_download"
+)
+
+st.markdown("---")
+
+# ---------- Contact & Socials ----------
+st.subheader("📬 Connect with Me")
+
+# Use columns for a neat layout
+col1, col2, col3, col4, col5, col6 = st.columns(6)
+
+with col1:
+    st.markdown("[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:at5849@nyu.edu)")
+
+with col2:
+    st.markdown("[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/surelyanushka)")
+
+with col3:
+    st.markdown("[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anushkatawte)")

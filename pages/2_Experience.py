@@ -22,11 +22,11 @@ with st.container():
         st.image(Image.open('images/vida.jpeg'))
     with text_column:
         st.markdown("""
-        - Designing a multiscale scatter plot visualization technique to handle large single-cell datasets for pathologists
-        - Implementing different clustering techniques with GPU support and semantic zooming to reduce clutter and highlight cell similarities
-        - Working on creating a specialized tool, enabling a drill-down from cell clusters to detailed views for cancer detection.
+        -  Developed a multi-scale visualization tool for cells using **cuML and CUDA**, cutting load times by 85%.
+        - Optimized **semantic zooming** using GPU-based clustering, cutting rendering time by 65% on **1M+ single-cell embeddings.**
+        - Implemented interactive clustering to highlight cancer cell similarities and allow detailed drill-down views.
         
-        `Research` `Information Visualization` `GPU` `BioMedical`
+        `Research` `Visualization` `cuML` `CUDA``GPU` `BioMed`
         """)
 
 with st.container():
@@ -48,7 +48,7 @@ with st.container():
         st.image(Image.open('images/tech1.png'))
     with text_column:
         st.markdown("""
-        - Led the strategic migration of the application's backend from **Java to Kotlin**, significantly enhancing code maintainability and facilitating **advanced data integration with SQLite** structured database, boosting app efficiency. 
+        - Led the strategic migration of the application's backend from **Java to Kotlin**, significantly enhancing code maintainability and facilitating advanced data integration with SQLite structured database, boosting app efficiency. 
         - Implemented Jetpack Compose to revolutionize the app's UI/UX design, catalyzing a **300% increase** in user engagement. 
         - Led a team to build and revamp the website [SIESGST Portal](https://portal.siesgst.ac.in/), significantly increasing engagement from **500 to over 2,000 active users**.           
         - Integrated essential features such as an assignment tracker, attendance system, and event calendar.
